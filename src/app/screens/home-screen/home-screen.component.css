@@ -1,0 +1,39 @@
+.home-jumbotron{
+    height: 400px;
+    background-image: url("../../../assets/dev.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.cover{
+    height: inherit;
+    background-color: rgba(0,0,0, .6);
+}
+
+
+.mat-card{
+    height: 50px !important;
+}
+.action-card{
+    background-color: "#ff587c";
+  
+}
+
+
+.action-col-height{
+    height: 50px;
+}
+
+/* .bg-m-red{
+background-color: "#ff587c"  !important;
+}
+
+.bg-m-yellow{
+    background-color: "#ffdb58" !important;
+    }
+
+.bg-m-blue{
+    background-color: "#587cff" !important;
+} */
+        

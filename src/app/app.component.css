@@ -1,0 +1,42 @@
+.toolbar {
+    height: 70px;
+    margin: -8px;
+    display: flex;
+    align-items: center;
+    background-color: #131f2b;
+    color: white;
+    font-weight: 600;
+  }
+
+
+ 
+  .brand{
+      margin-left: 20px;;
+  }
+
+  svg#clouds {
+    position: fixed;
+    bottom: -160px;
+    left: -230px;
+    z-index: -10;
+    width: 1920px;
+  }
+
+  .cover{
+      height: inherit;
+      background-color: rgba(0,0,0, .5);
+  }
+
+  .home-jumbotron{
+    height: 400px;
+    background-image: url("../assets/dev.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.cover{
+    height: inherit;
+    background-color: rgba(0,0,0, .6);
+}
+ 

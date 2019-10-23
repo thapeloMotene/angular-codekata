@@ -1,0 +1,36 @@
+<div class="jumbotron views-jumbotron">
+        <div class="container">
+          <h1 class="title text-center">View Address Validation Results</h1>  
+        </div>
+    </div>
+
+    <div class="container">
+       <p class="text-center">Click on any address to view validation Result</p>
+            <div class="row">
+        <div class="col-4" *ngFor="let address of addressList">
+                <address-card [address]="address" (click)="onAddressClicked(address)" ></address-card>
+        </div>
+                   
+        </div>
+    </div>
+
+        <div class="row py-10" *ngIf="canShowValidation">
+        <div class="container py-4">
+            <div *ngIf="validationResult.isValid"class="alert alert-success my-10" role="alert">
+                        Selected address is valid
+            </div>
+
+            
+            <div *ngIf="!validationResult.isValid"class="alert alert-warning my-10" role="alert">
+                    Selected address is invalid
+        </div>
+
+            <div *ngIf="!validationResult.isValid">
+                <div *ngFor="let issue of validationResult.issues" class="alert alert-danger" role="alert">
+                            {{issue}}
+                </div>
+            </div>
+        </div>
+        </div>
+                
+   

@@ -1,0 +1,25 @@
+<div class="address-card">
+    <div class="row">
+        <div class="col-4">
+            <div class="address-image">
+
+            </div>
+
+        </div>
+        <div class="col-6">
+                <p>{{address.type.name}}</p>
+                <div>
+                    <p *ngIf="address.addressLineDetail">
+                        <span *ngIf ="address.addressLineDetail.line1"> {{address.addressLineDetail.line1}}</span>
+                        <span *ngIf ="address.addressLineDetail.line2"> ,{{address.addressLineDetail.line2}}</span>
+                    </p>
+                    <p *ngIf="address.cityOrTown">{{address.cityOrTown}}</p>
+                    <p *ngIf="address.country"> {{address.country.name}}({{address.country.code}})</p>
+                </div>
+            </div>
+
+    </div>
+        
+</div>
+
+

@@ -1,0 +1,21 @@
+<div class="jumbotron views-jumbotron">
+        <div class="container">
+          <h1 class="title text-center">Find The Highest Common Factor</h1>  
+        </div>
+    </div>
+
+
+    <div class="container">
+            <tag-input [(ngModel)]='items' [modelAsStrings]="true" [appendToBody]="false"></tag-input>
+            <button class="btn btn-info mt-4" (click)="calculate()"> Calculate Highest Common Factor</button>
+    </div>
+
+    <div class="container mt-5">
+            <div *ngIf="canShowHCF" class="alert alert-info my-10" role="alert">
+                    The Hightest Common Factor is: {{hcf}}
+        </div>
+    </div>
+
+
+
+   
